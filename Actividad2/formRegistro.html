@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Usuarios</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+<body>
+<div class="tituloForm">
+    <h1>Formulario de Registro</h1>
+</div>
+<div class="msjeForm">
+    <h2>Te pedimos que rellenes los campos a continuación para poder continuar en el proceso de registro.</h2>
+</div>
+<form action="formLogin.html" method="GET">
+        <div class="columnas">
+            <!-- Columna de Datos Personales -->
+            <div class="columna">
+                <h3>Datos Personales</h3>
+                <hr>
+                <ul>
+                    <li class="zoomOut">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" autofocus required>
+                    </li>
+                    <li class="zoomOut">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" placeholder="..@gmail.com" name="email" required>
+                    </li>
+                    <li class="zoomOut">
+                        <label for="contraseña">Contraseña:</label>
+                        <input type="password" id="contraseña" name="contraseña" minlength="8" required
+                               pattern=".{8,}" title="La contraseña debe tener al menos 8 caracteres">
+                    </li>
+                    <li class="zoomOut">
+                        <label for="contraseñaOk">Confirme su contraseña:</label>
+                        <input type="password" id="contraseñaOk" name="contraseñaOk" required
+                               oninput="this.setCustomValidity(this.value === document.getElementById('contraseña').value ? '' : 'Las contraseñas no coinciden')">
+                    </li>
+                    <li>
+                        <label for="age">Fecha de nacimiento</label>
+                        <input type="date" id="age" name="age" required>
+                    </li>
+                    <li>
+                        <label for="genero">Genero:</label>
+                        <select id="genero" name="genero">
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="pais">País de residencia:</label>
+                        <select id="pais" name="pais" required>
+                            <option value="AL">Albania</option>
+                            <option value="DE">Alemania</option>
+                            <option value="AD">Andorra</option>
+                            <option value="AT">Austria</option>
+                            <option value="BE">Bélgica</option>
+                            <option value="BY">Bielorrusia</option>
+                            <option value="BA">Bosnia y Herzegovina</option>
+                            <option value="BG">Bulgaria</option>
+                            <option value="CY">Chipre</option>
+                            <option value="VA">Ciudad del Vaticano</option>
+                            <option value="HR">Croacia</option>
+                            <option value="DK">Dinamarca</option>
+                            <option value="SK">Eslovaquia</option>
+                            <option value="SI">Eslovenia</option>
+                            <option value="ES">España</option>
+                            <option value="EE">Estonia</option>
+                            <option value="FI">Finlandia</option>
+                            <option value="FR">Francia</option>
+                            <option value="GE">Georgia</option>
+                            <option value="GR">Grecia</option>
+                            <option value="HU">Hungría</option>
+                            <option value="IE">Irlanda</option>
+                            <option value="IS">Islandia</option>
+                            <option value="IT">Italia</option>
+                            <option value="XK">Kosovo</option>
+                            <option value="LV">Letonia</option>
+                            <option value="LI">Liechtenstein</option>
+                            <option value="LT">Lituania</option>
+                            <option value="LU">Luxemburgo</option>
+                            <option value="MK">Macedonia del Norte</option>
+                            <option value="MT">Malta</option>
+                            <option value="MD">Moldavia</option>
+                            <option value="MC">Mónaco</option>
+                            <option value="ME">Montenegro</option>
+                            <option value="NO">Noruega</option>
+                            <option value="NL">Países Bajos</option>
+                            <option value="PL">Polonia</option>
+                            <option value="PT">Portugal</option>
+                            <option value="UK">Reino Unido</option>
+                            <option value="CZ">República Checa</option>
+                            <option value="RO">Rumanía</option>
+                            <option value="RU">Rusia</option>
+                            <option value="SM">San Marino</option>
+                            <option value="RS">Serbia</option>
+                            <option value="SE">Suecia</option>
+                            <option value="CH">Suiza</option>
+                            <option value="UA">Ucrania</option>
+                        </select>
+                    </li>
+                </ul>
+                <hr>
+
+                <div class="zoomOut">
+                    <label for="legal" id="legalCheck">
+                        Confirmo que acepto terminos y condiciones.
+                        <input type="checkbox" id="legal" name="legal" required>
+                    </label>
+                </div>
+                <div class="btn-container">
+                    <input id="sendBotton" type="submit" value="Enviar">
+                </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>

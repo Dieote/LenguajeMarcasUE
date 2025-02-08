@@ -1,0 +1,26 @@
+               body {
+                 font-family: Arial, sans-serif;
+                   display: flex;
+                   justify-content: center; /* Centra horizontalmente */
+                   align-items: flex-start; /* Alinea en la parte superior */
+                   background-image: url("../css/backInreso.jpg");
+                   background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+                     background-repeat: no-repeat;
+                    height: 100vh;
+               }
+
+               div {
+                   text-align: center; /* Centra el texto dentro del div */
+                   background-color: #0186b4a8; /* Fondo blanco */
+                   padding: 10px 20px; /* Espaciado interno */
+                   border-radius: 8px; /* Bordes redondeados */
+                   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+                   margin-top: 20px; /* Espacio desde la parte superior */
+               }
+
+               h4 {
+                   display: inline-block; /* Muestra los elementos en línea */
+                   margin: 5px 15px; /* Espaciado entre elementos */
+                   color: #00000; /* Color del texto */
+                   font-size: 30px; /* Tamaño de fuente */
+               }

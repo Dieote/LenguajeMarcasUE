@@ -1,0 +1,83 @@
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: inherit;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+            background-image: url("../css/smokeBack.jpg");
+            background-size: cover;
+        }
+
+       h1 {
+            color: #000000;
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+
+        hr {
+            border: 2px;
+            height: 1px;
+            background: #000000;
+            margin: 20px 0;
+        }
+
+        div {
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #000000;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            border: 3px solid #000000;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        .btn-container {
+            text-align: center;
+        }
+
+        #sendBotton {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #sendBotton:hover {
+            background-color: #0056b3;
+        }
+
+        #legalCheck {
+            font-weight: normal;
+            color: #000000;
+            padding: 0;
+        }
