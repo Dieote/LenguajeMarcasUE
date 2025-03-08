@@ -1,5 +1,67 @@
+/* Estilos */ 
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f4f4f4;
 }
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(5, 10, 10, 2.1);
+    }
+    
+    button {
+        width: 95px;
+        height: 95px;
+        border: none;
+        background: #007bff;
+        color: white;
+        font-size: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background 0.3s;
+        }
+        
+        button:hover {
+            background: #0056b3;
+            }
+            
+            footer {
+                margin-top: 50px;
+                padding: 20px;
+                background: #222;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                }
+                
+                .social-links {
+                    display: flex;
+                    gap: 10px;
+                    margin-bottom: 10px;
+                    }
+                    
+                    .social-links a {
+                        color: white;
+                        text-decoration: none;
+                        }
+                        
+                        .social-links img {
+                            width: 30px;
+                            height: 30px;
+                            }
+                            /*
