@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="../CSS/estiloModal.css">
+<script src="../funciones.js"></script>
+
+<h2>Eliminar Trabajador</h2>
+        <form id="form">
+            <label for="id">ID del trabajador:</label>
+            <input type="text" id="id" required>
+            <br>          
+            <div>
+                <button class="botonDelete" type="button" onclick="openModal()">Eliminar</button>
+            </div>
+        </form>
+
+        <!-- Ventana Emergente-->
+        <div id="modalEliminar" class="modalContenido">
+            <div class="modal">
+                <div class="cerrar">
+                    <span onclick="closeModal()">&times;</span>
+                </div>
+                <h2>Confirmar Accion.</h2>
+                <p>¿Estas seguro que deseas eliminar este trabajador?</p>
+                <div>
+                    <button class="botonConfirmo" onclick="confirmarEliminacion()">Confirmo!</button>
+                </div>
+            </div>
