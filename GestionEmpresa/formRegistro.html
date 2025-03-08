@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="../CSS/estilosForm.css">
+<script src="../funciones.js"></script>
+
 <h2>Registrar Empleado</h2>
         <form id="form">
             <label for="nombre">Nombre:</label>
@@ -14,7 +16,7 @@
             <input type="number" id="salario" required>
             
             <label for="tipo">Tipo de Empleado:</label>
-            <select id="tipo" required>
+            <select id="tipo" required onchange="accionesForm()">
                 <option value="">Selecciona un tipo</option>
                 <option value="asalariado">Asalariado</option>
                 <option value="autonomo">Autónomo</option>
@@ -26,7 +28,7 @@
                 <input type="number" id="pagas">
             </div>
             
-            <div>
+            <div id="accionesDiv" style="display: none;">
                 <label for="acciones">Porcentaje de acciones:</label>
                 <input type="number" id="acciones">
             </div>
