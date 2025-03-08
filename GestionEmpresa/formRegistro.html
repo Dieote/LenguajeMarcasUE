@@ -1,5 +1,6 @@
+<link rel="stylesheet" href="../CSS/estilosForm.css">
 <h2>Registrar Empleado</h2>
-        <form>
+        <form id="form">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" required>
             
@@ -20,15 +21,16 @@
                 <option value="jefe">Jefe</option>
             </select>
             
-            <div id="extra-asalariado" class="extra oculto">
+            <div>
                 <label for="pagas">Número de pagas:</label>
                 <input type="number" id="pagas">
             </div>
             
-            <div id="extra-jefe" class="extra oculto">
+            <div>
                 <label for="acciones">Porcentaje de acciones:</label>
                 <input type="number" id="acciones">
             </div>
-            
-            <button type="submit">Registrar</button>
+            <div class="btn-contenedor">
+                <button id="botonEnviar" type="submit">Registrar</button>
+            </div>
         </form>
