@@ -52,3 +52,13 @@ function confirmarEliminacion() {
         alert("Error: ID no válido.");
     }
 }
+
+function cargarFormBuscar() {
+    fetch('formBuscar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('mostrarFormBuscar').innerHTML = data;
+            document.getElementById('mostrarFormBuscar').style.display = 'block';
+        })
+        .catch(error => console.error('Error cargando el buscador:', error));
+}
