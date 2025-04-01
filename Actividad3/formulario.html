@@ -13,13 +13,17 @@
         </div>
         <div class="header">
             <h2>Rellena los campos para comprobar la funcionalidad</h2>
+            <div class="xtra">   
+                <img class="xtra" src="/Images/extraterrestre.png" alt="xtra"></a>
+            </div>
         </div>
 
         <form method="get" >
             <div>
                 <h3>Ingrese sus datos</h3>
+                <hr>
             </div>
-            <div>
+            <div class="formulario">
                 <label for="usuario">Usuario:</label>
                 <input type="text" id="usuario" name="usuario" required>
                 <label for="correo">Correo Electronico:</label>
@@ -28,7 +32,9 @@
                 <input type="password" id="password" name="password" required>
                 <label for="passwordConfirm">Confirmar Contraseña:</label>
                 <input type="password" id="passwordConfirm" name="passwordConfirm" required>
-                <button type="submit">Registrar</button>
+                <div class="botonContenedor">
+                    <button type="submit">Registrar</button>
+                </div>
             </div>
 
         </form>
