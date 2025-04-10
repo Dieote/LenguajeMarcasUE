@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Formulario Actividad Evaluable 3</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="../funciones.js"></script>
+
 </head>
 
 <body>
@@ -16,7 +18,7 @@
     <div class="header">
         <h2>Rellena los campos para comprobar la funcionalidad</h2>
         <div class="xtra">
-            <img class="xtra" src="/Images/extraterrestre.png" alt="xtra"></a>
+            <img class="xtra" src="/images/extraterrestre.png" alt="xtra"></a>
         </div>
     </div>
 
@@ -40,70 +42,77 @@
         </div>
 
     </form>
-    <div class="caja-teclado">
+
+    <div>
+        <button onclick="openTeclado()">Abrir teclado-Virtual</button>
+    </div>
+    <div id="cajaTeclado" class="caja-teclado">
         <div class="teclado">
             <div class="teclado-titulo">
                 <h3>Teclado Virtual</h3>
-            <div id="virtual-teclas">
-                <div class="alfabeto">
-                    <button class="letra">a</button>
-                    <button class="letra">b</button>
-                    <button class="letra">c</button>
-                    <button class="letra">d</button>
-                    <button class="letra">e</button>
-                    <button class="letra">f</button>
-                    <button class="letra">g</button>
-                    <button class="letra">h</button>
-                    <button class="letra">i</button>
-                    <button class="letra">j</button>
-                    <button class="letra">k</button>
-                    <button class="letra">l</button>
-                    <button class="letra">m</button>
-                    <button class="letra">n</button>
-                    <button class="letra">o</button>
-                    <button class="letra">p</button>
-                    <button class="letra">q</button>
-                    <button class="letra">r</button>
-                    <button class="letra">s</button>
-                    <button class="letra">t</button>
-                    <button class="letra">u</button>
-                    <button class="letra">v</button>
-                    <button class="letra">w</button>
-                    <button class="letra">x</button>
-                    <button class="letra">z</button>
-                    <button id="mayus">Mayus</button>
-                    <button id="borrar">Borrar</button>
-                    <button id="espacio">Espacio</button>
-                    <button id="enter">Enter</button>
-                </div>
-                <div class="numeros">
-                    <button class="numero">1</button>
-                    <button class="numero">2</button>
-                    <button class="numero">3</button>
-                    <button class="numero">4</button>
-                    <button class="numero">5</button>
-                    <button class="numero">6</button>
-                    <button class="numero">7</button>
-                    <button class="numero">8</button>
-                    <button class="numero">9</button>
-                    <button class="numero">0</button>
-                </div>
-                <div class="simbolos">
-                    <button class="simbolo">!</button>
-                    <button class="simbolo">¡</button>
-                    <button class="simbolo">@</button>
-                    <button class="simbolo">=</button>
-                    <button class="simbolo">#</button>
-                    <button class="simbolo">$</button>
-                    <button class="simbolo">%</button>
-                    <button class="simbolo">^</button>
-                    <button class="simbolo">&amp;</button>
-                    <button class="simbolo">*</button>
-                    <button class="simbolo">(</button>
-                    <button class="simbolo">)</button>
+                <div id="virtual-teclas">
+                    <div class="alfabeto">
+                        <button class="letra">a</button>
+                        <button class="letra">b</button>
+                        <button class="letra">c</button>
+                        <button class="letra">d</button>
+                        <button class="letra">e</button>
+                        <button class="letra">f</button>
+                        <button class="letra">g</button>
+                        <button class="letra">h</button>
+                        <button class="letra">i</button>
+                        <button class="letra">j</button>
+                        <button class="letra">k</button>
+                        <button class="letra">l</button>
+                        <button class="letra">m</button>
+                        <button class="letra">n</button>
+                        <button class="letra">o</button>
+                        <button class="letra">p</button>
+                        <button class="letra">q</button>
+                        <button class="letra">r</button>
+                        <button class="letra">s</button>
+                        <button class="letra">t</button>
+                        <button class="letra">u</button>
+                        <button class="letra">v</button>
+                        <button class="letra">w</button>
+                        <button class="letra">x</button>
+                        <button class="letra">z</button>
+                        <button id="mayus">Mayuscula</button>
+                        <button id="borrar">Borrar</button>
+                        <button id="espacio">Espacio</button>
+                        <button id="enter">Enter</button>
+                    </div>
+                    <div class="numeros">
+                        <button class="numero">1</button>
+                        <button class="numero">2</button>
+                        <button class="numero">3</button>
+                        <button class="numero">4</button>
+                        <button class="numero">5</button>
+                        <button class="numero">6</button>
+                        <button class="numero">7</button>
+                        <button class="numero">8</button>
+                        <button class="numero">9</button>
+                        <button class="numero">0</button>
+                    </div>
+                    <div class="simbolos">
+                        <button class="simbolo">!</button>
+                        <button class="simbolo">¡</button>
+                        <button class="simbolo">@</button>
+                        <button class="simbolo">=</button>
+                        <button class="simbolo">#</button>
+                        <button class="simbolo">$</button>
+                        <button class="simbolo">%</button>
+                        <button class="simbolo">^</button>
+                        <button class="simbolo">&amp;</button>
+                        <button class="simbolo">*</button>
+                        <button class="simbolo">(</button>
+                        <button class="simbolo">)</button>
+                    </div>
+                    <div class="cerrar">
+                        <span onclick="closeTeclado()">&times;</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <hr>
+            <hr>
 
 </body>

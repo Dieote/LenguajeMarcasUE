@@ -81,16 +81,19 @@ h3{
 }
 .caja-teclado{
     margin: 0;
-    height: 70vh;
-    display: flex;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
 }
 
 #virtual-teclas {
     display: inline-flex;
     gap: 20px;
-    padding: 20px 169px;
+    padding: 0px 169px;
     border-radius: 12px;
 }
 
@@ -98,17 +101,29 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
+    gap: 2px;
 }
 
-.acciones-teclado{
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-}
 hr{
     border: 10px;
     height: 4px;
     background: black;
     margin: 20px 0;
+}
+.cerrar {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5%;
+}
+.cerrar span {
+    background-color: rgb(172, 12, 240);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 80%;
+    padding: 7px;
+}
+.cerrar span:hover {
+    background-color: #db43a9;
 }
