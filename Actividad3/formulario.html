@@ -1,41 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <title> Formulario Actividad Evaluable 3</title>
-        <link rel = "stylesheet" href = "css/styles.css">
-    </head>
-    <body>
-        <div class="titulo">
-            <h1>Formulario de registro interactivo</h1>
-            <h3>Con teclado en pantalla</h3>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario Actividad Evaluable 3</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>Formulario de registro interactivo</h1>
+        <h3>Con teclado en pantalla</h3>
+    </div>
+    <div class="header">
+        <h2>Rellena los campos para comprobar la funcionalidad</h2>
+        <div class="xtra">
+            <img class="xtra" src="/Images/extraterrestre.png" alt="xtra"></a>
         </div>
-        <div class="header">
-            <h2>Rellena los campos para comprobar la funcionalidad</h2>
-            <div class="xtra">   
-                <img class="xtra" src="/Images/extraterrestre.png" alt="xtra"></a>
+    </div>
+
+    <form method="get">
+        <div>
+            <h3>Ingrese sus datos</h3>
+            <hr>
+        </div>
+        <div class="formulario">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+            <label for="correo">Correo Electronico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="passwordConfirm">Confirmar Contraseña:</label>
+            <input type="password" id="passwordConfirm" name="passwordConfirm" required>
+            <div class="botonContenedor">
+                <button type="submit">Registrar</button>
             </div>
         </div>
 
-        <form method="get" >
-            <div>
-                <h3>Ingrese sus datos</h3>
-                <hr>
-            </div>
-            <div class="formulario">
-                <label for="usuario">Usuario:</label>
-                <input type="text" id="usuario" name="usuario" required>
-                <label for="correo">Correo Electronico:</label>
-                <input type="email" id="correo" name="correo" required>
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required>
-                <label for="passwordConfirm">Confirmar Contraseña:</label>
-                <input type="password" id="passwordConfirm" name="passwordConfirm" required>
-                <div class="botonContenedor">
-                    <button type="submit">Registrar</button>
+    </form>
+    <div class="caja-teclado">
+        <div class="teclado">
+            <div class="teclado-titulo">
+                <h3>Teclado Virtual</h3>
+            <div id="virtual-teclas">
+                <div class="alfabeto">
+                    <button class="letra">a</button>
+                    <button class="letra">b</button>
+                    <button class="letra">c</button>
+                    <button class="letra">d</button>
+                    <button class="letra">e</button>
+                    <button class="letra">f</button>
+                    <button class="letra">g</button>
+                    <button class="letra">h</button>
+                    <button class="letra">i</button>
+                    <button class="letra">j</button>
+                    <button class="letra">k</button>
+                    <button class="letra">l</button>
+                    <button class="letra">m</button>
+                    <button class="letra">n</button>
+                    <button class="letra">o</button>
+                    <button class="letra">p</button>
+                    <button class="letra">q</button>
+                    <button class="letra">r</button>
+                    <button class="letra">s</button>
+                    <button class="letra">t</button>
+                    <button class="letra">u</button>
+                    <button class="letra">v</button>
+                    <button class="letra">w</button>
+                    <button class="letra">x</button>
+                    <button class="letra">z</button>
+                    <button id="mayus">Mayus</button>
+                    <button id="borrar">Borrar</button>
+                    <button id="espacio">Espacio</button>
+                    <button id="enter">Enter</button>
+                </div>
+                <div class="numeros">
+                    <button class="numero">1</button>
+                    <button class="numero">2</button>
+                    <button class="numero">3</button>
+                    <button class="numero">4</button>
+                    <button class="numero">5</button>
+                    <button class="numero">6</button>
+                    <button class="numero">7</button>
+                    <button class="numero">8</button>
+                    <button class="numero">9</button>
+                    <button class="numero">0</button>
+                </div>
+                <div class="simbolos">
+                    <button class="simbolo">!</button>
+                    <button class="simbolo">¡</button>
+                    <button class="simbolo">@</button>
+                    <button class="simbolo">=</button>
+                    <button class="simbolo">#</button>
+                    <button class="simbolo">$</button>
+                    <button class="simbolo">%</button>
+                    <button class="simbolo">^</button>
+                    <button class="simbolo">&amp;</button>
+                    <button class="simbolo">*</button>
+                    <button class="simbolo">(</button>
+                    <button class="simbolo">)</button>
                 </div>
             </div>
+        </div>
+        <hr>
 
-        </form>
-    </body>
+</body>

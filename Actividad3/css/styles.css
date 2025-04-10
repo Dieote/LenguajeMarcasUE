@@ -72,3 +72,43 @@ h3{
     font-size: 25px;
     font-style: oblique;
 }
+/* Teclado Virtual*/
+.teclado-titulo h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+.caja-teclado{
+    margin: 0;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#virtual-teclas {
+    display: inline-flex;
+    gap: 20px;
+    padding: 20px 169px;
+    border-radius: 12px;
+}
+
+.alfabeto, .numeros, .simbolos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.acciones-teclado{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+hr{
+    border: 10px;
+    height: 4px;
+    background: black;
+    margin: 20px 0;
+}
