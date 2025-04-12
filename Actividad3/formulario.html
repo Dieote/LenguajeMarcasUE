@@ -22,7 +22,7 @@
         </div>
     </div>
 
-    <form method="get">
+    <form id="formValidar" method="get">
         <div>
             <h3>Ingrese sus datos</h3>
             <hr>
@@ -33,9 +33,9 @@
             <label for="correo">Correo Electronico:</label>
             <input type="email" id="correo" name="correo" required>
             <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="contrasenia" name="password" required>
             <label for="passwordConfirm">Confirmar Contraseña:</label>
-            <input type="password" id="passwordConfirm" name="passwordConfirm" required>
+            <input type="password" id="contraseniaConfirmacion" name="passwordConfirm" required>
             <div class="botonContenedor">
                 <button type="submit">Registrar</button>
             </div>
@@ -43,7 +43,7 @@
     </form>
 
     <div>
-        <button onclick="openTeclado()">Abrir teclado-Virtual</button>
+        <button onclick="openTeclado()" id="btn-teclado">Abrir teclado-Virtual</button>
     </div>
     <div id="cajaTeclado" class="caja-teclado">
         <div class="teclado">
@@ -69,6 +69,7 @@
                         <button class="letra">p</button>
                         <button class="letra">q</button>
                         <button class="letra">r</button>
+                        <button class="simbolo">.</button>
                         <button class="letra">s</button>
                         <button class="letra">t</button>
                         <button class="letra">u</button>
@@ -76,6 +77,7 @@
                         <button class="letra">w</button>
                         <button class="letra">x</button>
                         <button class="letra">z</button>
+                        <button class="simbolo">,</button>
                         <button id="mayus">Mayuscula</button>
                         <button id="borrar">Borrar</button>
                         <button id="espacio">Espacio</button>
