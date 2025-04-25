@@ -64,13 +64,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("formValidar");
 
     form.addEventListener("submit", function (event) {
-        let contrasena = document.getElementById("contrasenia").value;
-        let confirmacion = document.getElementById("contraseniaConfirmacion").value;
+        const usuario = document.getElementById("usuario").value;
+        const correo = document.getElementById("correo").value;
+        const contrasena = document.getElementById("contrasenia").value;
+        const confirmacion = document.getElementById("contraseniaConfirmacion").value;
+
+        // Validar campos requeridos
+        if (!form.checkValidity()) {
+            form.reportValidity(); // Muestra errores del navegador
+            return;
+        }
 
         if (contrasena !== confirmacion) {
-            event.preventDefault(); // Evita el envío del formulario
             alert("Las contraseñas no coinciden.");
             return false;
         }
+            alert("¡Registro exitoso!\nBienvenido, " + usuario + "!");
+        
+        form.submit(); // se envía el formulario
     });
 });
